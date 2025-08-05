@@ -1,0 +1,32 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="320"
+		Width="600"
+		Height="320"
+        x:Class="StarResonanseMiningHelper.MainWindow"
+        Title="星痕共鸣挂矿"
+		Icon="/icon.ico">
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="36"/>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Grid Grid.Row="0">
+			<Button x:Name="WorkBtn" Width="75" Click="WorkBtn_Click">
+				<TextBlock x:Name="WorkBtnTxb" Text="启动" HorizontalAlignment="Center"/>
+			</Button>
+			<TextBlock x:Name="StatusLbl" Text="状态：已停止" Margin="85,8,0,0"/>
+
+			<CheckBox x:Name="SendMouseWheelChk" Content="发送滚轮下" Margin="0,0,300,0" HorizontalAlignment="Right"/>
+			<TextBlock Text="采集间隔（秒）：" Margin="0,8,155,0" HorizontalAlignment="Right"/>
+			<TextBox x:Name="DelaySecondTxb" Width="40" Margin="0,0,85,0" HorizontalAlignment="Right" Text="40" TextChanged="DelaySecondTxb_TextChanged"/>
+			<Button x:Name="ClearLogBtn" HorizontalAlignment="Right">
+				<TextBlock Text="清空日志" HorizontalAlignment="Center"/>
+			</Button>
+		</Grid>
+		<TextBox x:Name="LogTxb" Grid.Row="1" ScrollViewer.VerticalScrollBarVisibility="Visible">
+		</TextBox>
+	</Grid>
+</Window>
