@@ -1,0 +1,2 @@
+# StarResonanseMiningHelper
+自用星痕共鸣挂机挖矿软件
