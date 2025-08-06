@@ -20,7 +20,7 @@
 以上操作会在50毫秒内完成，一轮挖矿循环的默认等待时间为40秒（因为矿石刷新时间30-36秒不固定），即每40秒只会占用50毫秒的时间，几乎不会影响主屏的工作
 
 #### 如何使用
-到 [Release](https://github.com/Alex1911-Jiang/StarResonanseMiningHelper/releases) 中下载 StarResonanseMiningHelper.zip 并解压运行
+到 [Release](https://github.com/Alex1911-Jiang/StarResonanseMiningHelper/releases) 中下载 StarResonanseMiningHelper.zip 解压，并使用管理员身份运行
 
 #### 如果你想自己编译
 由于使用了AOT编译，你需要将 [SkiaSharp](https://github.com/2ndlab/SkiaSharp.Static) 的静态库（libHarfBuzzSharp.lib、libSkiaSharp.lib）放到项目目录，再执行 dotnet publish -c Release -r win-x64
